@@ -1,0 +1,12 @@
+[package]
+name = "sdrtx-core"
+description = "Band plan and transmit-authorization policy"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+# Dummy-load test mode for off-band bench work. Not in the default build; see the README.
+offband-test = []
+
+[dependencies]

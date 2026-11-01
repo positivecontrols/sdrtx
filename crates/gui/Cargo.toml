@@ -1,0 +1,20 @@
+[package]
+name = "sdrtx-gui"
+description = "Push-to-talk transceiver GUI for HackRF"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "sdrtx-gui"
+path = "src/main.rs"
+
+[dependencies]
+sdrtx-core.workspace = true
+sdrtx-dsp.workspace = true
+sdrtx-radio.workspace = true
+# Renderer::Glow is selected at runtime: wgpu asks the Pi 5 V3D GPU for 16 inter-stage shader
+# variables and it only has 15.
+eframe = { version = "0.36", features = ["glow"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

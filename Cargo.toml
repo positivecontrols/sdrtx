@@ -1,0 +1,14 @@
+[workspace]
+resolver = "3"
+members = ["crates/core", "crates/dsp", "crates/hackrf", "crates/radio", "crates/cli", "crates/gui"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Unlicense"
+
+[workspace.dependencies]
+sdrtx-core = { path = "crates/core" }
+sdrtx-dsp = { path = "crates/dsp" }
+sdrtx-hackrf = { path = "crates/hackrf" }
+sdrtx-radio = { path = "crates/radio" }

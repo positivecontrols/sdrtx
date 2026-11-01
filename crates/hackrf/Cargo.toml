@@ -1,0 +1,10 @@
+[package]
+name = "sdrtx-hackrf"
+description = "Minimal safe libhackrf TX wrapper that only transmits under a TxPermit"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+links = "hackrf"
+
+[dependencies]
+sdrtx-core.workspace = true

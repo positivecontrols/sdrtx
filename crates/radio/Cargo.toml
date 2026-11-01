@@ -1,0 +1,13 @@
+[package]
+name = "sdrtx-radio"
+description = "Half-duplex transceiver engine: HackRF RX/TX state machine with mic and speaker audio"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+sdrtx-core.workspace = true
+sdrtx-dsp.workspace = true
+sdrtx-hackrf.workspace = true
+cpal = "0.18"
+serde = { version = "1", features = ["derive"] }
